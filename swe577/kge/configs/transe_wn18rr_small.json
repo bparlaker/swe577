@@ -1,0 +1,16 @@
+{
+  "name": "transe_wn18rr_small",
+  "dataset": "WN18RR",
+  "model": "TransE",
+  "model_kwargs": { "embedding_dim": 200, "scoring_fct_norm": 1 },
+  "loss": "MarginRankingLoss",
+  "loss_kwargs": { "margin": 6.0 },
+  "optimizer": "Adam",
+  "optimizer_kwargs": { "lr": 0.001 },
+  "negative_sampler": "basic",
+  "negative_sampler_kwargs": { "num_negs_per_pos": 32 },
+  "training_kwargs": { "num_epochs": 80, "batch_size": 512 },
+  "seed": 42,
+  "force_cpu": true,
+  "_notes": "Reduced-scale TransE for WN18RR. ~10-20 min on CPU."
+}

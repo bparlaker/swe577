@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "description": "30 factual questions about well-known entities, used to compare a bare LLM against a KG-grounded RAG pipeline that retrieves triples from Wikidata. Each item carries the question, the gold answer, and the Wikidata Q-id (or P-id) needed to retrieve the relevant triples.",
+    "assembled_by": "Berker Parlaker",
+    "assembled_for": "SWE 577 - Spring 2026, Boğaziçi University",
+    "license": "CC0 - free to redistribute",
+    "answer_grading": "Exact match on a normalised answer string. Graders may mark a model answer correct if it contains the gold answer string as a substring (case-insensitive)."
+  },
+  "items": [
+    {"id": "q01", "question": "What is the capital of Turkey?",                         "gold": "Ankara",            "wikidata_entity": "Q43",       "relation": "P36"},
+    {"id": "q02", "question": "Who directed the film Inception?",                       "gold": "Christopher Nolan", "wikidata_entity": "Q25188",    "relation": "P57"},
+    {"id": "q03", "question": "In which year was Albert Einstein born?",                "gold": "1879",              "wikidata_entity": "Q937",      "relation": "P569"},
+    {"id": "q04", "question": "What language is spoken in Brazil?",                     "gold": "Portuguese",        "wikidata_entity": "Q155",      "relation": "P37"},
+    {"id": "q05", "question": "Who wrote the novel One Hundred Years of Solitude?",     "gold": "Gabriel García Márquez", "wikidata_entity": "Q5651", "relation": "P50"},
+    {"id": "q06", "question": "What is the chemical symbol for gold?",                  "gold": "Au",                "wikidata_entity": "Q897",      "relation": "P246"},
+    {"id": "q07", "question": "Which mountain is the tallest in the world?",            "gold": "Mount Everest",     "wikidata_entity": "Q513",      "relation": null},
+    {"id": "q08", "question": "Who painted the Mona Lisa?",                             "gold": "Leonardo da Vinci", "wikidata_entity": "Q12418",    "relation": "P170"},
+    {"id": "q09", "question": "What is the currency of Japan?",                         "gold": "yen",               "wikidata_entity": "Q17",       "relation": "P38"},
+    {"id": "q10", "question": "In which city is the Colosseum located?",                "gold": "Rome",              "wikidata_entity": "Q10285",    "relation": "P131"},
+    {"id": "q11", "question": "Who composed the Fifth Symphony in C minor?",            "gold": "Ludwig van Beethoven", "wikidata_entity": "Q7320",  "relation": "P86"},
+    {"id": "q12", "question": "What is the largest planet in the Solar System?",        "gold": "Jupiter",           "wikidata_entity": "Q319",      "relation": null},
+    {"id": "q13", "question": "Which country has Reykjavik as its capital?",            "gold": "Iceland",           "wikidata_entity": "Q189",      "relation": "P36"},
+    {"id": "q14", "question": "Who founded Microsoft?",                                 "gold": "Bill Gates",        "wikidata_entity": "Q2283",     "relation": "P112"},
+    {"id": "q15", "question": "In which year did the Berlin Wall fall?",                "gold": "1989",              "wikidata_entity": "Q5086",     "relation": null},
+    {"id": "q16", "question": "Who is the author of the Harry Potter series?",          "gold": "J. K. Rowling",     "wikidata_entity": "Q8337",     "relation": "P50"},
+    {"id": "q17", "question": "What is the longest river in the world?",                "gold": "Nile",              "wikidata_entity": "Q3392",     "relation": null},
+    {"id": "q18", "question": "Who developed the theory of general relativity?",        "gold": "Albert Einstein",   "wikidata_entity": "Q11455",    "relation": "P61"},
+    {"id": "q19", "question": "Which scientist proposed the laws of planetary motion?", "gold": "Johannes Kepler",   "wikidata_entity": "Q8763",     "relation": "P61"},
+    {"id": "q20", "question": "What is the smallest country in the world by area?",     "gold": "Vatican City",      "wikidata_entity": "Q237",      "relation": null},
+    {"id": "q21", "question": "Who is the current Secretary-General of the United Nations?", "gold": "António Guterres", "wikidata_entity": "Q1065", "relation": "P488"},
+    {"id": "q22", "question": "What is the chemical formula of water?",                 "gold": "H2O",               "wikidata_entity": "Q283",      "relation": "P274"},
+    {"id": "q23", "question": "Who invented the World Wide Web?",                       "gold": "Tim Berners-Lee",   "wikidata_entity": "Q466",      "relation": "P61"},
+    {"id": "q24", "question": "In which country is the Pyramid of Cheops located?",     "gold": "Egypt",             "wikidata_entity": "Q37200",    "relation": "P17"},
+    {"id": "q25", "question": "Who painted The Starry Night?",                          "gold": "Vincent van Gogh",  "wikidata_entity": "Q45585",    "relation": "P170"},
+    {"id": "q26", "question": "What is the capital of Australia?",                      "gold": "Canberra",          "wikidata_entity": "Q408",      "relation": "P36"},
+    {"id": "q27", "question": "Who proved Fermat's Last Theorem?",                      "gold": "Andrew Wiles",      "wikidata_entity": "Q174981",   "relation": null},
+    {"id": "q28", "question": "Which physicist developed the uncertainty principle?",   "gold": "Werner Heisenberg", "wikidata_entity": "Q40609",    "relation": "P61"},
+    {"id": "q29", "question": "What is the official language of Egypt?",                "gold": "Arabic",            "wikidata_entity": "Q79",       "relation": "P37"},
+    {"id": "q30", "question": "Who is the founder of psychoanalysis?",                  "gold": "Sigmund Freud",     "wikidata_entity": "Q9215",     "relation": null}
+  ]
+}
