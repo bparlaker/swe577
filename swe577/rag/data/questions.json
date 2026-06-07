@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "description": "30 factual questions about well-known entities, used to compare a bare LLM against a KG-grounded RAG pipeline that retrieves triples from Wikidata. Each item carries the question, the gold answer, and an entity hint that the pipeline searches for in Wikidata at runtime via the wbsearchentities API. No Wikidata Q-ids are hard-coded, which keeps the question set robust against re-numbering and removes a class of silent failure.",
+    "assembled_by": "Berker Parlaker",
+    "assembled_for": "SWE 577 - Spring 2026, Bogazici University",
+    "license": "CC0 - free to redistribute",
+    "answer_grading": "Substring match on a normalised answer string. A model answer is marked correct if it contains the gold answer (case-insensitive, ASCII-folded)."
+  },
+  "items": [
+    {"id": "q01", "question": "What is the capital of Turkey?",                                   "gold": "Ankara",                  "entity_hint": "Turkey"},
+    {"id": "q02", "question": "Who directed the film Inception?",                                 "gold": "Christopher Nolan",       "entity_hint": "Inception 2010 film"},
+    {"id": "q03", "question": "In which year was Albert Einstein born?",                          "gold": "1879",                    "entity_hint": "Albert Einstein"},
+    {"id": "q04", "question": "What is the official language of Brazil?",                         "gold": "Portuguese",              "entity_hint": "Brazil"},
+    {"id": "q05", "question": "Who wrote the novel One Hundred Years of Solitude?",               "gold": "Gabriel Garcia Marquez",  "entity_hint": "One Hundred Years of Solitude"},
+    {"id": "q06", "question": "What is the chemical symbol for gold?",                            "gold": "Au",                      "entity_hint": "gold chemical element"},
+    {"id": "q07", "question": "Who painted the Mona Lisa?",                                       "gold": "Leonardo da Vinci",       "entity_hint": "Mona Lisa"},
+    {"id": "q08", "question": "What is the currency of Japan?",                                   "gold": "yen",                     "entity_hint": "Japan"},
+    {"id": "q09", "question": "Who founded Microsoft?",                                           "gold": "Bill Gates",              "entity_hint": "Microsoft"},
+    {"id": "q10", "question": "Who is the author of the Harry Potter series?",                    "gold": "J. K. Rowling",           "entity_hint": "Harry Potter book series"},
+    {"id": "q11", "question": "What is the chemical formula of water?",                           "gold": "H2O",                     "entity_hint": "water"},
+    {"id": "q12", "question": "Who invented the World Wide Web?",                                 "gold": "Tim Berners-Lee",         "entity_hint": "World Wide Web"},
+    {"id": "q13", "question": "Who painted The Starry Night?",                                    "gold": "Vincent van Gogh",        "entity_hint": "The Starry Night"},
+    {"id": "q14", "question": "What is the capital of Australia?",                                "gold": "Canberra",                "entity_hint": "Australia"},
+    {"id": "q15", "question": "What is the official language of Egypt?",                          "gold": "Arabic",                  "entity_hint": "Egypt"},
+    {"id": "q16", "question": "Who wrote the play Hamlet?",                                       "gold": "William Shakespeare",     "entity_hint": "Hamlet play"},
+    {"id": "q17", "question": "What is the capital of France?",                                   "gold": "Paris",                   "entity_hint": "France"},
+    {"id": "q18", "question": "Who painted The Last Supper?",                                     "gold": "Leonardo da Vinci",       "entity_hint": "The Last Supper painting"},
+    {"id": "q19", "question": "Who developed the theory of general relativity?",                  "gold": "Albert Einstein",         "entity_hint": "general relativity"},
+    {"id": "q20", "question": "What is the capital of Egypt?",                                    "gold": "Cairo",                   "entity_hint": "Egypt"},
+    {"id": "q21", "question": "Who wrote The Old Man and the Sea?",                               "gold": "Ernest Hemingway",        "entity_hint": "The Old Man and the Sea"},
+    {"id": "q22", "question": "What is the capital of Spain?",                                    "gold": "Madrid",                  "entity_hint": "Spain"},
+    {"id": "q23", "question": "Who founded Apple Inc.?",                                          "gold": "Steve Jobs",              "entity_hint": "Apple Inc."},
+    {"id": "q24", "question": "What is the official language of Germany?",                        "gold": "German",                  "entity_hint": "Germany"},
+    {"id": "q25", "question": "Who wrote the novel 1984?",                                        "gold": "George Orwell",           "entity_hint": "Nineteen Eighty-Four"},
+    {"id": "q26", "question": "Who painted The Persistence of Memory?",                           "gold": "Salvador Dali",           "entity_hint": "The Persistence of Memory"},
+    {"id": "q27", "question": "What is the capital of Canada?",                                   "gold": "Ottawa",                  "entity_hint": "Canada"},
+    {"id": "q28", "question": "What is the official language of Russia?",                         "gold": "Russian",                 "entity_hint": "Russia"},
+    {"id": "q29", "question": "Who composed the opera Don Giovanni?",                             "gold": "Wolfgang Amadeus Mozart", "entity_hint": "Don Giovanni opera"},
+    {"id": "q30", "question": "What is the capital of Argentina?",                                "gold": "Buenos Aires",            "entity_hint": "Argentina"}
+  ]
+}

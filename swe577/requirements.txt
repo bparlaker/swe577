@@ -1,0 +1,16 @@
+# Knowledge-graph embedding (Part 1)
+torch>=2.1
+pykeen>=1.10           # KG embedding models, datasets, and evaluation
+numpy
+pandas
+tqdm
+
+# Retrieval-augmented generation (Part 2)
+requests               # Wikidata SPARQL queries
+SPARQLWrapper          # nicer SPARQL client
+transformers>=4.40     # optional: local HF backend
+accelerate             # optional: HF inference
+openai                 # optional: openai backend (only if OPENAI_API_KEY set)
+
+# Tooling
+python-dotenv
